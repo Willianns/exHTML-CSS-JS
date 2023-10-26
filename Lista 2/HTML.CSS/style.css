@@ -1,0 +1,38 @@
+.termo {
+    border-bottom: 1px dotted #000;
+    cursor: pointer;
+}
+
+.termo:hover::after {
+    content: attr(dica);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    border: 1px solid;
+    padding: 3px;
+    margin: 1px;
+}
+
+input[type="text"]:invalid, 
+input[type="password"]:invalid{
+    border: 1px solid red;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 24px
+    }
+    ul {
+        margin-left: 10px;
+}
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    
+    <h1>Formulários</h1>
+
+<hr>
+
+<h2>Formulário simples</h2>
+
+<form action="processar_formulario.php" method="post">
+ 
+    <label for="none">Nome:</label>
+ <input type="text" id="none" name="none" required><br><br>
+
+   <label for="Email">Email:</label>
+ <input type="email" id="email" name="email" required><br><br>
+
+   <label for="mensagem">Mensagem:</label><br>
+ <textarea name="mensagem" id="mensagem" cols="40" rows="4" required></textarea><br><br>
+
+ <input type="submit" value="Enviar">
+
+</form>
+
+<hr>
+
+<h2>Formulario para um Boletim Informativo de Segurança Cibernética </h2>
+
+<form action="processar_formulario.php" method="post">
+ <label for="name">Nome:</label>
+ <input type="text" id="name" name="none" required><br><br>
+ 
+ <label for="email">Email:</label>
+ <input type="text" id="email" name="email" required><br><br>
+
+ <input type="submit" value="Enviar">
+</form>
+
+<hr>
+
+<h2>Login do Usuário</h2>
+
+<form action="processar_formulario.php" method="post">
+    <label for="name">Nome do Usuário:</label>
+    <input type="text" id="username" name="username" required><br><br>
+    
+    <label for="password">Senha:</label>
+    <input type="password" id="password" name="password" required> <br><br>
+
+    <input type="submit" value="Entrar">
+</form>
+
+<hr>
+
+<h2>formulario de Feedback</h2>
+
+<form action="processar_formulario.php" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="experiencia">Experiência de Segurança</label><br>
+    <select name="experiencia" id="experiencia"> 
+        <option value="excelente">Excelente</option>
+        <option value="boa">Boa</option>
+        <option value="ruim">Ruim</option><br><br>
+
+        <label for="comentario">Comentário:</label>
+        <textarea name="comentario" id="comentario" cols="40" rows="4"></textarea><br><br>
+
+    <input type="submit" value="Enviar">    
+    </form>
+
+    <hr>
+
+    <h2>Recuperação da Senha</h2>
+
+    <form action="processar_formulario.php" method="post">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+    <input type="submit" value="Enviar um Link para Recuperação">
+
+    </form>
+</body>
+</html>
